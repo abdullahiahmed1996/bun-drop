@@ -1,3 +1,6 @@
+.main-container {
+  display: flex;
+}
 .text-container {
   display: flex;
   flex-direction: column;
@@ -8,10 +11,12 @@
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 100px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+  margin-left: 20px;
+  align-items: center;
 }
 
 .btn-order {
@@ -23,8 +28,13 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .btn-order:hover {
   background-color: #0069d9;
+}
+
+.burger-image {
+  height: 610px;
 }

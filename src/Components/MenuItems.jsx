@@ -46,6 +46,7 @@ function MenuItems() {
             description={item.description}
             price={item.price}
             addLocalStorge={addLocalStorage}
+            image={item.image}
           />
         ))}
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import "../Services/Order.css";
+import { Link } from "react-router-dom";
 
 
 function OrderMenu() {
@@ -33,7 +34,9 @@ function OrderMenu() {
       </div>
 
       <div>
-        <button>Checkout</button>
+        <Link to={"/checkout"}>
+          <button>Checkout</button>
+        </Link>
       </div>
     </div>
   );

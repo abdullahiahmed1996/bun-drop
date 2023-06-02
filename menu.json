@@ -14,7 +14,7 @@
       "description": "A smoky delight with crispy bacon, tangy barbecue sauce, and caramelized onions.",
       "category": "burgers",
       "price": 9.99,
-      "image": "classic_cheeseburger.png"
+      "image": "Beacon_bbq_burger.png"
     },
     {
       "id": 3,
@@ -45,70 +45,80 @@
       "name": "French Fries",
       "description": "Crispy golden fries served with ketchup.",
       "category": "sides",
-      "price": 3.99
+      "price": 3.99,
+      "image": "French_Fries.png"
     },
     {
       "id": 7,
       "name": "Onion Rings",
       "description": "Crunchy breaded onion rings, perfect as a side or snack.",
       "category": "sides",
-      "price": 4.99
+      "price": 4.99,
+      "image": "Onion_Rings.png"
     },
     {
       "id": 8,
       "name": "Loaded Nachos",
       "description": "Tortilla chips topped with melted cheese, jalapenos, salsa, and sour cream.",
       "category": "sides",
-      "price": 6.99
+      "price": 6.99,
+      "image": "Loaded_Nachos.png"
     },
     {
       "id": 9,
       "name": "Sweet Potato Fries",
       "description": "Delicious sweet potato fries served with a tangy dipping sauce.",
       "category": "sides",
-      "price": 4.99
+      "price": 4.99,
+      "image": "Sweet_Potato_Fries.png"
     },
     {
       "id": 10,
       "name": "Garlic Parmesan Wings",
       "description": "Tender chicken wings coated in a flavorful garlic parmesan sauce.",
       "category": "sides",
-      "price": 7.99
+      "price": 7.99,
+      "image": "Garlic_Parmesan_Wings.png"
     },
     {
       "id": 11,
       "name": "Classic Soda",
       "description": "Refreshing carbonated soda available in various flavors.",
       "category": "drinks",
-      "price": 2.99
+      "price": 2.99,
+      "image": "Classic_Soda.png"
     },
     {
       "id": 12,
       "name": "Iced Tea",
       "description": "Chilled black or green tea served with or without lemon.",
       "category": "drinks",
-      "price": 2.99
+      "price": 2.99,
+      "image": "Iced_Tea_2.png"
     },
     {
       "id": 13,
       "name": "Fruit Smoothie",
       "description": "Blended mixture of fresh fruits, yogurt, and ice for a fruity and creamy delight.",
       "category": "drinks",
-      "price": 4.99
+      "price": 4.99,
+      "image": "Fruit_Smoothie.png"
     },
     {
       "id": 14,
       "name": "Milkshake",
       "description": "Creamy milk-based drink with various flavors like chocolate, vanilla, or strawberry.",
       "category": "drinks",
-      "price": 4.99
+      "price": 4.99,
+      "image": "Milkshake.png"
     },
     {
       "id": 15,
       "name": "Lemonade",
       "description": "Refreshing citrus drink made with freshly squeezed lemons and sweetened with sugar.",
       "category": "drinks",
-      "price": 3.99
+      "price": 3.99,
+      "image": "Lemonade.png"
     }
   ]
 }

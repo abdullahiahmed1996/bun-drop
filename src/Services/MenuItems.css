@@ -3,3 +3,9 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
+
+.item-image {
+  width: 120px;
+  height: 90px;
+
+}

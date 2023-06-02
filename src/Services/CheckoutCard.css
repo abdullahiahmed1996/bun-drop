@@ -1,0 +1,12 @@
+.checkout-container {
+  display: flex;
+}
+
+.payment-container {
+    margin-left: 40px;
+ 
+}
+.payment-container input {
+  margin-right: 20px;
+  font-size: 15px;
+}
