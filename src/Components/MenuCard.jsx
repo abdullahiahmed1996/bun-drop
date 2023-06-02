@@ -9,11 +9,11 @@ function MenuCard({
   price,
   category,
   addLocalStorge,
+  toggleOrderModal,
 }) {
-
-  const handleOrderClick = () => {
+  const handleOrderClick = (e) => {
     addLocalStorge(id);
-    window.alert(`Added ${name} to order !`);
+    toggleOrderModal(e, id);
   };
 
   return (
@@ -25,10 +25,7 @@ function MenuCard({
         <h3 className="item-category">{category}</h3>
         <h3 className="item-price">${price}</h3>
 
-        <button
-          className="btn-order"
-          onClick= {handleOrderClick}
-        >
+        <button className="btn-order" onClick={(e) => handleOrderClick(e)}>
           Order
         </button>
       </div>

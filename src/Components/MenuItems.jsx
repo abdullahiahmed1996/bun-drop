@@ -4,6 +4,8 @@ import "../Services/MenuItems.css";
 
 function MenuItems() {
   const [menu, setMenu] = useState([]);
+  const [displayOrderModal, setDisplayOrderModal] = useState(false);
+  const [orderItem, setOrderItem] = useState({});
 
   useEffect(() => {
     fetch("http://localhost:7000/menu")
@@ -13,6 +15,20 @@ function MenuItems() {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  function toggleOrderModal(e, id) {
+    if (e.target && e.target.classList.contains("order-modal")) {
+      setDisplayOrderModal(!displayOrderModal);
+    } else if (e.target && e.target.classList.contains("btn-order")) {
+      const item = menu.find((i) => i.id === id);
+
+      if (item) {
+        setOrderItem(item);
+      }
+
+      setDisplayOrderModal(!displayOrderModal);
+    }
+  }
 
   function addLocalStorage(id) {
     const menuItem = menu.find((item) => item.id === id);
@@ -37,6 +53,16 @@ function MenuItems() {
 
   return (
     <div>
+      {displayOrderModal ? (
+        <div className="order-modal" onClick={toggleOrderModal}>
+          <div className="order-modal-content">
+            <h3>{`You added ${orderItem.name} to your order!`}</h3>
+            <em>Price: {orderItem.price}</em>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="items">
         {menu.map((item) => (
           <MenuCard
@@ -47,6 +73,7 @@ function MenuItems() {
             price={item.price}
             addLocalStorge={addLocalStorage}
             image={item.image}
+            toggleOrderModal={toggleOrderModal}
           />
         ))}
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Services/Navbar.css";
-import blacklogo from "../Images/logo black.png";
 
 function Navbar() {
   return (
@@ -12,7 +11,7 @@ function Navbar() {
             <div>
               <img
                 style={{ height: "40px", marginRight: "2px" }}
-                src={blacklogo}
+                src="/Images/logo black.png"
                 alt="Bun Drop Logo"
               />
               <h1 className="title">Bun Drop</h1>
