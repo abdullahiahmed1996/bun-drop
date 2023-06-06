@@ -4,6 +4,7 @@ import Menu from "./Components/Menu";
 import OrderMenu from "./Components/OrderMenu";
 import Checkout from "./Components/Checkout";
 import Navbar from "./Components/Navbar";
+import Confirm from "./Routes/Confirm";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path={"/menu"} element={<Menu />} />
           <Route path={"/ordermenu"} element={<OrderMenu />} />
           <Route path={"/checkout"} element={<Checkout />} />
+          <Route path={"/confirm"} element={<Confirm />} />
           <Route path={"/navbar"} element={<Navbar />}/>
         </Routes>
       </header>
