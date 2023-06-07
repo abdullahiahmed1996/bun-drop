@@ -1,0 +1,21 @@
+.about-title {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.about-text {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+}

@@ -19,7 +19,7 @@ function MenuCard({
   return (
     <div className="card-container">
       <div>
-        <img className="item-image" src={`/Images/${image}`} alt="NotFound" />
+        <img className="item-image" src={`/Images/${image}`} alt= {name} />
         <h3 className="item-name">{name}</h3>
         <h3 className="item-description">{description}</h3>
         <h3 className="item-category">{category}</h3>

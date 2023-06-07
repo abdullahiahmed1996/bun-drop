@@ -15,6 +15,8 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: rgba(0,0,0,0.3);
+  /* color: white; */
 }
 
 .order-summary h2 {
@@ -53,6 +55,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .payment-container label {

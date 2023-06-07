@@ -14,7 +14,6 @@ function PaymentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Handle payment processing logic here
     const paymentDetails = {
       name: name,
       email: email,
@@ -23,7 +22,6 @@ function PaymentForm() {
       expiryDate: expiryDate,
       cvv: cvv,
       paymentMethod: paymentMethod,
-      //totalPrice: totalPrice,
     };
     console.log(paymentDetails);
 
@@ -49,8 +47,13 @@ function PaymentForm() {
     }
   };
 
+  function emptyLocalStorage() {
+    localStorage.removeItem("items");
+  }
+
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Billing info</h2>
       <label>
         Name:
         <input
@@ -108,7 +111,7 @@ function PaymentForm() {
           <label>
             CVV:
             <input
-              type="text"
+              type="password"
               value={cvv}
               onChange={(e) => setCvv(e.target.value)}
               minLength={3}
@@ -145,7 +148,11 @@ function PaymentForm() {
         </select>
       </label>
       {/* <button type="submit">Pay $ {totalPrice}</button> */}
-      <button type="submit" disabled={!validateForm()}>
+      <button
+        onClick={emptyLocalStorage}
+        type="submit"
+        disabled={!validateForm()}
+      >
         Pay
       </button>
     </form>

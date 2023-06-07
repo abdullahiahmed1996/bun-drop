@@ -46,7 +46,6 @@ function CheckoutCard() {
 
         <div className="payment-container">
           <PaymentForm totalPrice={totalPrice} />
-          {/* <button  className="pay-button">Pay $ {totalPrice}</button> */}
         </div>
       </div>
     </div>

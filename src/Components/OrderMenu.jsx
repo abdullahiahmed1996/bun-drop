@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import "../Services/Order.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 
@@ -17,6 +19,7 @@ function OrderMenu() {
    const updatesItems = orderItems.filter((item) => item.id !== id);
    setOrderItems(updatesItems);
    localStorage.setItem("items", JSON.stringify(updatesItems));
+   alert("Item removed from order!");
   }
 
   return (
@@ -24,18 +27,20 @@ function OrderMenu() {
       <Navbar />
       <div className="order-card">
         {orderItems.map((item) => (
-          <div key={item.id}>
-            <button onClick={() => removeOrder(item.id)}>X</button>
+          <div className="item-card" key={item.id}>
+            <button className="btn-remove" onClick={() => removeOrder(item.id)}>
+              <FontAwesomeIcon icon={faTrashCan} />
+            </button>
             <h2>{item.name}</h2>
-            <p>{item.price}</p>
-            <p>{item.quantity}</p>
+            <p>Price: $ {item.price}</p>
+            <p>Quantity: {item.quantity}</p>
           </div>
         ))}
       </div>
 
       <div>
         <Link to={"/checkout"}>
-          <button>Checkout</button>
+          <button className="btn-checkout">Checkout</button>
         </Link>
       </div>
     </div>

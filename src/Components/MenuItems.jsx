@@ -56,8 +56,8 @@ function MenuItems() {
       {displayOrderModal ? (
         <div className="order-modal" onClick={toggleOrderModal}>
           <div className="order-modal-content">
-            <h3>{`You added ${orderItem.name} to your order!`}</h3>
-            <em>Price: {orderItem.price}</em>
+            <h3>{`You added "${orderItem.name}" to your order!`}</h3>
+            <h4>Price: {orderItem.price}</h4>
           </div>
         </div>
       ) : (

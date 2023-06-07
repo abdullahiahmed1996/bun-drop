@@ -22,7 +22,7 @@ function Navbar() {
         <div>
           <Link to={"/menu"}>Menu</Link>
           <Link to={"/ordermenu"}>Order</Link>
-          <Link to={"/checkout"}>Checkout</Link>
+          <Link to={"/about"}>About</Link>
         </div>
       </div>
     </div>
