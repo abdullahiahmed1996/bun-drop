@@ -79,3 +79,17 @@
 .payment-container button:hover {
   background-color: #0069d9;
 }
+
+.btn-menu {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-menu :hover {
+  background-color: #0069d9;
+}

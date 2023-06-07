@@ -1,6 +1,6 @@
 import React from "react";
 //import Navbar from "./Navbar";
-import CheckoutCard from "./CheckoutCard";
+import CheckoutCard from "../Components/CheckoutCard";
 import "../Services/Checkout.css";
 
 function Checkout() {

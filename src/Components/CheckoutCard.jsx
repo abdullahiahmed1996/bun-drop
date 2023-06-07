@@ -28,6 +28,7 @@ function CheckoutCard() {
     <div>
       <Navbar />
       <div className="checkout-container">
+        
         <div className="order-summary">
           <h2>Order Summary</h2>
           {data && (

@@ -53,6 +53,7 @@ function MenuItems() {
 
   return (
     <div>
+      <h1>Menu</h1>
       {displayOrderModal ? (
         <div className="order-modal" onClick={toggleOrderModal}>
           <div className="order-modal-content">

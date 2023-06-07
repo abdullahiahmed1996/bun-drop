@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Routes/Home";
-import Menu from "./Components/Menu";
-import OrderMenu from "./Components/OrderMenu";
-import Checkout from "./Components/Checkout";
+import Menu from "./Routes/Menu";
+import OrderMenu from "./Routes/OrderMenu";
+import Checkout from "./Routes/Checkout";
 import Navbar from "./Components/Navbar";
 import Confirm from "./Routes/Confirm";
 import About from "./Routes/About";

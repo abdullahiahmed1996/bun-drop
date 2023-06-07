@@ -1,11 +1,10 @@
 .order-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
 }
 .item-card {
   border-radius: 5px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin: 10px;
 }
@@ -17,7 +16,6 @@
 .item-card p {
   color: black;
   font-weight: bold;
-  
 }
 
 .btn-remove {
@@ -44,6 +42,7 @@
   cursor: pointer;
   margin-top: 20px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .empty-cart {

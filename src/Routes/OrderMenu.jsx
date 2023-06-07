@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 import "../Services/Order.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
@@ -22,13 +22,19 @@ function OrderMenu() {
    alert("Item removed from order!");
   }
 
+
+
   return (
     <div>
       <Navbar />
+      <h1>Orders</h1>
       {orderItems.length === 0 ? (
         <div className="empty-cart">
           <h2>You have no orders.</h2>
           <h2>Please choose some of our items avalible.</h2>
+          <Link to={"/menu"}>
+            <button className="btn-menu">Go to menu</button>
+          </Link>
         </div>
       ) : (
         <div className="order-card">
