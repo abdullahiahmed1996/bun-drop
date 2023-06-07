@@ -25,24 +25,36 @@ function OrderMenu() {
   return (
     <div>
       <Navbar />
-      <div className="order-card">
-        {orderItems.map((item) => (
-          <div className="item-card" key={item.id}>
-            <button className="btn-remove" onClick={() => removeOrder(item.id)}>
-              <FontAwesomeIcon icon={faTrashCan} />
-            </button>
-            <h2>{item.name}</h2>
-            <p>Price: $ {item.price}</p>
-            <p>Quantity: {item.quantity}</p>
-          </div>
-        ))}
-      </div>
+      {orderItems.length === 0 ? (
+        <div className="empty-cart">
+          <h2>You have no orders.</h2>
+          <h2>Please choose some of our items avalible.</h2>
+        </div>
+      ) : (
+        <div className="order-card">
+          {orderItems.map((item) => (
+            <div className="item-card" key={item.id}>
+              <button
+                className="btn-remove"
+                onClick={() => removeOrder(item.id)}
+              >
+                <FontAwesomeIcon icon={faTrashCan} />
+              </button>
+              <h2>{item.name}</h2>
+              <p>Price: $ {item.price}</p>
+              <p>Quantity: {item.quantity}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
-      <div>
-        <Link to={"/checkout"}>
-          <button className="btn-checkout">Checkout</button>
-        </Link>
-      </div>
+      {orderItems.length > 0 && (
+        <div>
+          <Link to={"/checkout"}>
+            <button className="btn-checkout">Checkout</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -147,7 +147,6 @@ function PaymentForm() {
           <option value="swish">Swish</option>
         </select>
       </label>
-      {/* <button type="submit">Pay $ {totalPrice}</button> */}
       <button
         onClick={emptyLocalStorage}
         type="submit"

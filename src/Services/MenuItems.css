@@ -24,9 +24,10 @@
 }
 
 .order-modal-content {
-  height: 40%;
+  height: 25%;
   width: 40%;
   background-color: white;
+  text-align: center; 
 }
 
 .order-modal h3 {

@@ -57,7 +57,7 @@ function MenuItems() {
         <div className="order-modal" onClick={toggleOrderModal}>
           <div className="order-modal-content">
             <h3>{`You added "${orderItem.name}" to your order!`}</h3>
-            <h4>Price: {orderItem.price}</h4>
+            <h4>Price: $ {orderItem.price}</h4>
           </div>
         </div>
       ) : (

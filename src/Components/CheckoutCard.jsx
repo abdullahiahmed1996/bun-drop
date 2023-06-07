@@ -9,6 +9,8 @@ function CheckoutCard() {
 
   const [totalPrice, setTotalPrice] = useState([]);
 
+  
+
  
   useEffect(() => {
     setData(JSON.parse(localStorage.getItem("items")));
